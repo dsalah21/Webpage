@@ -1,0 +1,486 @@
+html, body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo del documento */
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal si el contenido es más ancho que la pantalla */
+  }
+
+header {
+    background: #446c9c;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    text-align: center;
+    padding-top: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.head1{
+    margin-left: 155px;
+}
+
+/*Barra de navegació a la dreta*/
+
+/*Ninguna forma de lista y con overflow eliminamos posibles errores por contenido de afuera. Todo lo de fuera se corta y se invisibiliza */
+nav ul {
+    list-style: none;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-align: center;
+}
+/*Con float left hacemos que la lista se vea en horizontal*/
+nav ul li {
+    float: left;
+    font-family: 'opensans-bold',Helvetica, sans-serif;
+    font-size: 11px;
+    
+}
+/*Creamos un bloque en los elementos anchor, después un padding y un color de este*/
+nav ul li a {
+    display: block; 
+    padding: 0px 20px 0px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+/* Agrega estilos adicionales si es necesario */
+header hr {
+    color: #ddd;
+    border-width: 0.12px;
+}
+
+  /*Cambiamos los colres de fondo de cada seccion*/
+    #HOME {
+        background-image: url('img02.jpg'); 
+        background-size: cover;
+        background-position: center;
+        color: #fff; 
+        /*Alinear elemntos al centro*/
+        text-align: center; 
+        padding-top: 250px;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+
+        width: 100%; /* Puedes ajustar este porcentaje según tus necesidades */
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+        box-sizing: border-box;
+
+
+
+
+
+
+
+    }
+
+    /*Editar la line hr de HOME*/
+
+    #CONTACT hr {
+        height: 10px; /* Ajusta la altura según tus necesidades */
+        border: none; /* Para eliminar el borde predeterminado */
+        background-color: #000; /* Para hacer la línea transparente */
+        margin: 0;
+    }
+    /*Ajustamos el tamaño del texto*/
+    #HOME h1 {
+        font-family: 'opensans-bold', sans-serif;
+        font-size: 90px;
+        margin: 0px;
+        text-shadow: 
+        -2px -1px 0 rgb(10, 23, 74),  
+         1px -1px 0 rgb(10, 23, 74),
+        -1px  1px 0 rgb(10, 23, 74),
+         1px  1px 0 rgb(10, 23, 74);
+
+    }
+
+
+    #HOME h3 {
+        font-family: 'librebaskerville-regular', serif;
+        font-size: 20px;
+        text-shadow: 
+        -2px -1px 0 rgb(10, 23, 74),  
+         1px -1px 0 rgb(10, 23, 74),
+        -1px  1px 0 rgb(10, 23, 74),
+         1px  1px 0 rgb(10, 23, 74);
+    }
+
+
+    #ABOUT {
+        background-color: #000;
+        color: #fff;
+        align-items: left;
+        text-align: left; /* Centrar el texto horizontalmente */
+        padding: 120px 0px 150px;
+    
+    }
+
+    #ABOUT p {
+        width: 100%; /* Puedes ajustar este porcentaje según tus necesidades */
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+        padding: 20px; /* Ajusta el espacio interior según tus preferencias */
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    #ABOUT #pimg {
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        align-items: left;
+        text-align: left; /* Centrar el texto horizontalmente */
+        padding-left: 200px; 
+    }
+
+    h5 {
+    color: #F06000;
+    font-family: 'opensans-bold', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    }
+
+    #ABOUT #imgdua {
+        flex-shrink: 0;
+        margin-right: 30px;
+        height: 160px;
+        width: 160px;
+
+
+    }
+    #ABOUT #imgdua img {
+        overflow: hidden; /* Oculta cualquier parte de la imagen fuera del marco */
+        border-radius: 100%; /* Hace que la imagen tenga bordes redondos */
+        border: 3px solid #F06000; /* Borde fino de color naranja */
+        max-width: 100%;
+        height:auto;
+    }
+
+    .contenedor {
+        display:flex
+    }
+
+    #about caja {
+        flex:1;
+        text-align: left;
+        border: 0px solid #ccc;
+        margin-right: 100px;
+        padding-right: 20px;
+    }
+/*LISTA INFO*/
+    .info-list li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .info-list li strong,
+    .info-list li span {
+        display: block; /* Cambiado de 'inline' a 'block' */
+    }
+/*LISTA SKILLS*/
+    #caja ul {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    
+
+    /*BARRA DE SKILLS*/
+
+    .progress {
+        margin-bottom: 20px;
+        height: 10px;
+        background-color: #8d8d8f; /* Color de fondo de la barra de progreso */
+    }
+
+    .progress-container {
+        height: 10px;
+        background-color: #ddd; /* Color de fondo del contenedor de la barra de progreso */
+        border-radius: 5px; /* Añade esquinas redondeadas para suavizar la apariencia */
+        overflow: hidden; /* Asegura que la barra de progreso no se extienda fuera del contenedor */
+    }
+
+    /*BOTON DESCARGA CV*/
+
+    #descargarBtn {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'opensans-bold', sans-serif;
+        background-color: #11ABB0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300x;
+    }
+
+    #descargarBtn:hover {
+        background-color: #8d8d8f;
+    }
+    /*BOTÓN REDIRECCION*/
+    .boton-redireccion {
+        width: 300px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'opensans-bold', sans-serif;
+        background-color: #11ABB0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .boton-redireccion:hover {
+        background-color: #8d8d8f;
+    }
+
+    /*RESUME SECTION*/
+
+    #RESUME {
+        background-color: #FFFFFF; 
+        margin: 0px 0px 0px 0px;
+    }
+
+    .intro-center {
+        text-align: center;
+    }
+
+    #RESUME h1 {
+        color: #000000;
+        font: bold 36px 'opensans-bold', sans-serif;
+        margin: 0px 0px 12px;
+      }
+
+      #ABOUT h1 {
+        color: #FFF;
+        font: bold 36px 'opensans-bold', sans-serif;
+        margin: 0px 0px 12px;
+      }
+
+      #RESUME h2 {
+        color: #000000;
+        color:#888888 ; /* Reemplaza "Color" con el valor real del color */
+        font: 20px 'lora-regular', serif;
+        margin: 0px 0px 30px;
+        margin: 0px 0px 12px;
+      }
+
+      #RESUME h3 {
+        color: #313131;
+        font: bold 18px 'opensans-bold', sans-serif;
+      }
+
+      #RESUME h4 {
+        color: #11ABB0;
+        font: bold 20px 'opensans-bold', sans-serif; margin: 0px 0px 0px;
+        padding: 0px 0px 0px;
+        width: 600px;
+        height: 30px;
+
+      }
+
+      #RESUME h6 {
+        color: #F06000;
+        font: bold 28px 'opensans-bold', sans-serif;
+        margin: 20px 0px 20px;
+        text-align: center
+        ;
+
+
+      }
+      #RESUME p {
+        color: #838C95;
+        font: 15px 'opensans-regular', sans-serif;
+        margin: 0px 0px 30px;
+    }
+
+    #ABOUT p {
+        color: white;
+        font: 15px 'opensans-regular', sans-serif;
+        margin: 0px 0px 30px;
+    }
+
+
+    .work-expirience {
+        width: 80%; /* Puedes ajustar este porcentaje según tus necesidades */
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+        padding: 20px; /* Ajusta el espacio interior según tus preferencias */
+        box-sizing: border-box;
+        text-align: justify;
+    }
+
+    .BackgroundEdu {
+        width: 80%; /* Puedes ajustar este porcentaje según tus necesidades */
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+        padding: 20px; /* Ajusta el espacio interior según tus preferencias */
+        box-sizing: border-box;
+        text-align: justify;
+
+    }
+    .projectid {
+        text-align: justify;
+    }
+
+    #PROJECTS {
+        background-color:#EBEEEE;
+        padding-top: 50px;
+        padding-left: 50px;
+        text-align: justify;
+      
+        
+    }
+
+    #PROJECTS h1 {
+        color: #000000;
+        font: bold 36px 'opensans-bold', sans-serif;
+        margin: 0px 0px 12px;
+        text-align: center;
+      }
+
+    #ACTIVITIES {
+        padding-top: 50px;
+        padding-left: 50px;
+        background-image: url('background.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background: #151515;
+        
+    }
+
+    #ACTIVITIES h1 {
+        color: #FFF;
+        font: bold 36px 'opensans-bold', sans-serif;
+        margin: 0px 0px 12px;
+        text-align: center;
+      }
+
+    #CONTACT {
+        background-color: #000;
+        color: #fff;
+        padding-top: 50px;
+        padding-left: 50px;
+        text-align: center;
+    }
+
+    #CONTACT p {
+        color: #838C95;
+        font-size: 15px;
+        font-family: 'poppins-regular', sans-serif;
+        margin: 0px 0px 30px;
+    }
+
+    /*LINEA DEL TIEMPO*/
+    .timeline {
+        position: relative;
+        width: 2px; /* Ancho de la línea vertical */
+        background-color: #333;
+        margin: 0 auto;
+      }
+  
+      .timeline-point {
+        position: absolute;
+        width: 20px; /* Ancho del contenedor del icono */
+        height: 20px; /* Altura del contenedor del icono */
+        background-color: #3a1d1d;
+        border: 2px solid #333;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -9px; /* Alinea los puntos a la izquierda de la línea vertical */
+      }
+  
+      .timeline-event {
+        margin: 20px 0;
+      }
+  
+      /* Añade estilos para los iconos específicos si es necesario */
+      .timeline-point:nth-child(odd) {
+        background-color: #eee;
+      }
+  
+      /* Agrega estilos para descripciones u otros detalles */
+      .timeline-description {
+        margin-left: 30px;
+        font-size: 14px;
+      }
+
+
+
+
+/* Estilos para los iconos */
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.redes-sociales li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.redes-sociales li a {
+    text-decoration: none;
+    color: #341c1c; /* Color del icono */
+    font-size: 40px;
+}
+
+
+
+
+
+.FOOTER {
+  color: #525252; /* Cambia el color a tu preferencia */
+  font-size: 14px;
+  font-family: 'opensans-regular', sans-serif;
+  padding: 48px 0px 20px;
+  background-color: #1e1d1d;
+  text-align: center;
+}
+
+#CONTACT h1 {
+    color: #fff;
+    font: bold 36px 'opensans-bold', sans-serif;
+    margin: 0px 0px 12px;
+    text-align: center;
+  }
+    
+.contenedor01 {
+    width: 80%; /* Puedes ajustar este porcentaje según tus necesidades */
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    padding: 20px; /* Ajusta el espacio interior según tus preferencias */
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.contenedor01 p {
+    text-align: justify;
+}
+
+.justify01 {
+    width: 80%; /* Puedes ajustar este porcentaje según tus necesidades */
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    padding: 20px; /* Ajusta el espacio interior según tus preferencias */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+table {
+    margin: auto; /* Esto centra la tabla dentro del div */
+    border-collapse: collapse;
+    width: 50%; /* Puedes ajustar el ancho según tus necesidades */
+    text-align: justify;
+}
+
+table {
+    color: white;
+}
+

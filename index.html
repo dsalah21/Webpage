@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <!-- HEAD -->
+    <head>
+        <title>Página Web Personal Dua</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>    
+
+    <!-- BODY -->
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <div class="head1">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="seccion2.html">ABOUT</a></li>
+                    <li><a href="seccion3.html">RESUME</a></li>
+                    <li><a href="seccion4.html">PROJECTS</a></li>
+                    <li><a href="seccion5.html">ACTIVITIES</a></li>
+                    <li><a href="seccion6.html">CONTACT</a></li>
+                </ul>
+                </div>
+            </nav>
+            <hr>
+        </header>
+
+        <!--SCRIPT PARA EL HEADER-->
+        <script>
+            window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+
+            // Cambia el fondo del encabezado a negro cuando el scroll supera 50px
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#333333'; // Cambia a color negro
+            } else {
+                header.style.backgroundColor = '#446c9c'; // Vuelve a ser transparente
+            }
+            });
+
+        </script>
+        
+
+        <!-- MAIN -->
+        <main>
+            <!-- SECCION HOME-->
+            <section id="HOME"> 
+                <div class="banner-text">
+                <h1> Dua Salah</h1>
+                <h3>
+                    <span>Computer Systems in Networking student</span>
+                    <span>Cibersecurity</span>
+                </h3>
+                <ul class="redes-sociales">
+                    <li><a href="https://www.linkedin.com/in/dua-salah-1639b6275" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://duasalah8@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://tryhackme.com/p/dudu.slh" target="_blank"><img src="tryHackme_icono (1).ico" alt="icon"></a></li>
+                </ul>
+                 </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="FOOTER">
+            <p>Design by Dua Salah El Alami· © Copyright 2024 CeeVee</p>
+        </footer>
+    </body>
+</html>

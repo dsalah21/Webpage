@@ -1,0 +1,135 @@
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<header>
+    <nav>
+        <div class="head1">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="seccion2.html">ABOUT</a></li>
+            <li><a href="seccion3.html">RESUME</a></li>
+            <li><a href="seccion4.html">PROJECTS</a></li>
+            <li><a href="seccion5.html">ACTIVITIES</a></li>
+            <li><a href="seccion6.html">CONTACT</a></li>
+        </ul>
+        </div>
+    </nav>
+    <hr>
+</header>
+
+<section id="ABOUT">
+    <div class="intro-center">
+    <h5>About</h5>
+    <h1>Let me introduce myself.</h1> 
+    </div>
+    <div class="justify01">
+    <div id="pimg">
+        <div id="imgdua">
+            <img src="imgdu.jpg">
+        </div>
+        <p>As a Computer Systems in Networking student, I am passionate about networks and cybersecurity. I pride myself on being highly organized, productive, and responsible, continually seeking personal and professional growth. My inherent curiosity fuels my ongoing quest for learning and enables me to adapt swiftly to evolving circumstances.
+        </p>
+    </div>
+
+    <div class="contenedor">
+    <div id="caja"> 
+        <h3>PROFILE</h3>
+        <p>I am in the final stages of completing my first year in the Computer Network Systems Administration program. I am actively seeking Dual FP opportunities and welcome inquiries. Feel free to reach out to me via email at duasalah8@gmail.com</p>
+        
+        <div>
+        <ul class="info-list">
+            <li>
+                <strong>FULLNAME:</strong>
+                <span>Dua Salah El Alami</span>
+            </li>
+
+            <li>
+                <strong>BIRTH DATE:</strong>
+                <span>November 5, 2004</span>
+            </li>
+
+            <li>
+                <strong>EMAIL:</strong>
+                <span>duasalah8@gmail.com</span>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+
+    <div id="caja"> 
+        <h3>SKILLS</h3>
+        <p>My skills include network administration, data protection, vulnerability assessment, and the implementation of security measures to prevent and mitigate cyber threats, providing a robust defense against potential IT risks.</p>
+
+      <ul id="skill-list">
+        <li>
+            <strong>Linux</strong>
+            <div class="progress-container">
+                <div class="progress" style="width: 80%;"></div>
+            </div> 
+        </li>
+      </ul>
+
+      <ul id="skill-list">
+        <li>
+            <strong>Wireshark</strong>
+            <div class="progress-container">
+                <div class="progress" style="width: 70%;"></div>
+            </div> 
+        </li>
+      </ul>
+
+
+      <ul id="skill-list">
+        <li>
+            <strong>Networking</strong>
+            <div class="progress-container">
+                <div class="progress" style="width: 75%;"></div>
+            </div> 
+        </li>
+      </ul>
+
+      <ul id="skill-list">
+        <li>
+            <strong>MySQL</strong>
+            <div class="progress-container">
+                <div class="progress" style="width: 55%;"></div>
+            </div> 
+        </li>
+      </ul>
+
+    </div>
+    </div>
+    
+    <div id="Download">
+     <!-- Boton descarga CV -->
+    
+        <button id="descargarBtn">Download CV</button>
+        <script>
+            document.getElementById("descargarBtn").addEventListener("click", function() {
+                // Ruta al archivo PDF
+                var pdfURL = "cv_europass_Douae_Salah.pdf";
+    
+                // Crear un enlace temporal
+                var link = document.createElement("a");
+                link.href = pdfURL;
+    
+                // Atributo 'download' para indicar que se descargará
+                link.download = "cv_europass_Douae_Salah.pdf";
+    
+                // Hacer clic en el enlace para iniciar la descarga
+                link.click();
+            });
+        </script>
+
+        <!--Boton redirección -->
+        <a href="seccion6.html" class="boton-redireccion">Hire Me</a>
+      </div> 
+    </div>
+
+</section>
+
+<footer class="FOOTER">
+    <p>Design by Dua Salah El Alami· © Copyright 2024 CeeVee</p>
+</footer>
